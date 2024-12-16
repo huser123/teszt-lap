@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Főoldal</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
 </head>
 <body>
-    <header>
-        <h1>Üdvözöllek a Blogomban!</h1>
-        <p>Kövess végig egy átlagos ember kicsit vicces, kicsit önironikus mindennapjain!</p>
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Üdvözöllek a Blogomban!</h1>
+        <p class="lead">Kövess végig egy átlagos ember vicces és önironikus mindennapjait!</p>
     </header>
 
-    <main>
-        <section class="posts">
-            <article>
-                <h2><a href="hetfo.html">Hétfő: A hét kezdete</a></h2>
-                <p>A hétfő reggelek különös érzéssel töltenek el. Klikkelj, hogy megtudd, miért!</p>
-            </article>
-            <article>
-                <h2><a href="kedd.html">Kedd: A produktivitás napja</a></h2>
-                <p>Valóban lehet produktívnak lenni egy kedden? Klikk, hogy kiderüljön!</p>
-            </article>
-            <article>
-                <h2><a href="szerda.html">Szerda: A hét közepe</a></h2>
-                <p>Hogyan lendülök át a hét felén? Olvass tovább!</p>
-            </article>
-            <article>
-                <h2><a href="csutortok.html">Csütörtök: Az elvárások napja</a></h2>
-                <p>Mi történik, amikor már közeleg a hétvége? Klikk ide!</p>
-            </article>
-            <article>
-                <h2><a href="pentek.html">Péntek: A hétvége előszobája</a></h2>
-                <p>Egy átlagos pénteki nap... vagy mégsem? Olvasd el!</p>
-            </article>
-        </section>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hétfő: A hét kezdete</h5>
+                        <p class="card-text">A hétfő reggelek különös érzéssel töltenek el. Klikkelj, hogy megtudd, miért!</p>
+                        <a href="hetfo.html" class="btn btn-primary">Olvass tovább</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kedd: A produktivitás napja</h5>
+                        <p class="card-text">Valóban lehet produktívnak lenni egy kedden? Klikk, hogy kiderüljön!</p>
+                        <a href="kedd.html" class="btn btn-primary">Olvass tovább</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Szerda: A hét közepe</h5>
+                        <p class="card-text">Hogyan lendülök át a hét felén? Olvass tovább!</p>
+                        <a href="szerda.html" class="btn btn-primary">Olvass tovább</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Csütörtök: Az elvárások napja</h5>
+                        <p class="card-text">Mi történik, amikor már közeleg a hétvége? Klikk ide!</p>
+                        <a href="csutortok.html" class="btn btn-primary">Olvass tovább</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Péntek: A hétvége előszobája</h5>
+                        <p class="card-text">Egy átlagos pénteki nap... vagy mégsem? Olvasd el!</p>
+                        <a href="pentek.html" class="btn btn-primary">Olvass tovább</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
     </footer>
 
-  <!--  <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

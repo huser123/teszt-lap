@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Péntek: A hétvége előszobája</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
 </head>
 <body>
-    <header>
-        <h1>Péntek: A hétvége előszobája</h1>
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="h2">Péntek: A hétvége előszobája</h1>
     </header>
 
-    <main>
-        <p><strong>(Az alábbi szöveg fiktív. A ChatGPT-vel készült tesztelés céljából.)</strong></p>
+    <main class="container py-4">
+        <div class="alert alert-info" role="alert">
+            <strong>(Az alábbi szöveg fiktív. A ChatGPT-vel készült tesztelés céljából.)</strong>
+        </div>
         <p>Péntek reggel. A hét utolsó munkanapja, és valahogy mindig van egy kis pezsgés a levegőben. Az emberek már a hétvégi terveikről beszélnek, én pedig arra gondolok, hogy csak túl kell élnem ezt a napot. A reggeli kávém ma különösen jól esik, és egy pillanatra elhiszem, hogy minden rendben lesz.</p>
         <p>Délutánra már egyre nehezebb koncentrálni. A munka lassan, de biztosan halad, miközben az óra mutatói mintha lelassulnának. A gondolat, hogy holnap végre pihenhetek, egyre motiválóbbá válik. A péntekek mindig kicsit kaotikusak: mindenki próbál mindent befejezni, mielőtt elindul a hétvége.</p>
         <p>Este végre hazaérek, és megkönnyebbülten veszem tudomásul, hogy túléltem a hetet. Egy jó vacsora és egy film mellett végre kiengedhetek. A péntek tehát egyfajta lezárás, egy kapu a hétvége felé, ahol újra feltöltődhetünk a következő hét kihívásaira.</p>
-        <img src="pentek.webp" alt="Péntek, a hétvége előszobája">
+        <img src="pentek.webp" alt="Péntek, a hétvége előszobája" class="img-fluid rounded my-3">
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <nav>
-            <a href="csutortok.html">Előző bejegyzés: Csütörtök</a> |
-            <a href="index.html">Vissza a főoldalra</a>
+            <a href="csutortok.html" class="text-white me-3">Előző bejegyzés: Csütörtök</a>
+            <a href="index.html" class="text-white">Vissza a főoldalra</a>
         </nav>
-        <p>&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
+        <p class="mb-0">&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,23 +1,21 @@
-// Egyszerű üdvözlő üzenet a főoldal betöltésekor
-document.addEventListener("DOMContentLoaded", function () {
-    alert("Üdvözlünk a blogomban! Köszönjük, hogy ellátogattál.");
+// Aktív menüpont kiemelése a navigációban
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
 });
 
-// Gördülékeny görgetés a linkek között (főleg, ha hosszabb oldal lenne)
-const links = document.querySelectorAll('a[href^="#"]');
-
-links.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
+// Képek animált megjelenítése
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.style.opacity = 0;
+        img.style.transition = 'opacity 0.5s ease-in-out';
+        img.onload = () => {
+            img.style.opacity = 1;
+        };
     });
 });

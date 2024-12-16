@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Csütörtök: Az elvárások napja</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
 </head>
 <body>
-    <header>
-        <h1>Csütörtök: Az elvárások napja</h1>
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="h2">Csütörtök: Az elvárások napja</h1>
     </header>
 
-    <main>
-        <p><strong>(Az alábbi szöveg fiktív. A ChatGPT-vel készült tesztelés céljából.)</strong></p>
+    <main class="container py-4">
+        <div class="alert alert-info" role="alert">
+            <strong>(Az alábbi szöveg fiktív. A ChatGPT-vel készült tesztelés céljából.)</strong>
+        </div>
         <p>A csütörtök mindig nagy reményekkel indul. Már látjuk a hétvége fényét az alagút végén, de még van egy utolsó nagy roham a teendők frontján. Ma reggel is így kezdtem: tele energiával és tervekkel, amiket persze az első email máris felborított.</p>
         <p>Dél körül már inkább a túlélésre játszom. Egy csapatmegbeszélés közben azon kapom magam, hogy a hétvégi programokról ábrándozom. Szerencsére a kollégáimnak hasonló gondolataik vannak, így gyorsan véget ér a meeting, és mindenki visszatér a maga kis világába.</p>
         <p>Estére már érzem, hogy az egész heti hajtás kezd kifárasztani. De a gondolat, hogy holnap péntek, mindent megér. A csütörtök tehát egyfajta várakozás, egy küzdelem, hogy elérjük a hétvége kapuját. És ez az apró reménysugár segít átvészelni a napot.</p>
-        <img src="csutortok.webp" alt="Csütörtöki hajtás">
+        <img src="csutortok.webp" alt="Csütörtöki hajtás" class="img-fluid rounded my-3">
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <nav>
-            <a href="szerda.html">Előző bejegyzés: Szerda</a> |
-            <a href="pentek.html">Következő bejegyzés: Péntek</a>
+            <a href="szerda.html" class="text-white me-3">Előző bejegyzés: Szerda</a>
+            <a href="pentek.html" class="text-white">Következő bejegyzés: Péntek</a>
         </nav>
-        <p>&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
+        <p class="mb-0">&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
