@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmadik oldal</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Nunito', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #ffe4e1, #ffdab9);
+            background: #fff0f6;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -21,35 +19,33 @@
             height: 100vh;
         }
         h1 {
-            font-size: 2.5rem;
-            color: #800080;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+            color: #d63384;
         }
         p {
             font-size: 1.2rem;
-            margin: 10px 20px;
-            text-align: center;
+            margin: 15px 0;
         }
-        a {
-            color: #4caf50;
-            text-decoration: none;
-            font-weight: bold;
-            border: 2px solid #4caf50;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        a:hover {
-            background-color: #4caf50;
+        .nav-links a {
             color: #fff;
+            background-color: #d63384;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #b91c66;
         }
     </style>
 </head>
 <body>
     <h1>Harmadik oldal</h1>
-    <p>Ez a harmadik oldal, amely kiegészíti az előző tartalmakat.</p>
-    <p><a href="index.html">Vissza a főoldalra</a></p>
-    <p><a href="masodik.html">Lépj a második oldalra</a></p>
+    <p>Ez a harmadik oldal tartalma.</p>
+    <div class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="masodik.html">Második oldal</a>
+    </div>
 </body>
 </html>
