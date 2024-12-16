@@ -1,4 +1,4 @@
-/* Egyedi stílusok kiegészítés a Bootstrap dizájnhoz */
+/* Egyedi stílusok kiegészítés a Bootstrap dizájnhoz zöld színvilággal */
 
 /* Alapvető beállítások */
 body {
@@ -8,7 +8,9 @@ body {
 
 /* Header stílusok */
 header {
+    background-color: #28a745; /* Zöld szín */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 header h1 {
@@ -30,20 +32,35 @@ main p {
 
 main img {
     border: 2px solid #dee2e6;
+    border-radius: 5px;
 }
 
 /* Footer */
 footer {
+    background-color: #28a745; /* Zöld szín */
+    color: white;
     margin-top: 20px;
     font-size: 0.9rem;
 }
 
 footer nav a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer nav a:hover {
-    color: #ffc107;
+    color: #ffc107; /* Arany szín */
+}
+
+/* Gombok */
+.btn-primary {
+    background-color: #28a745; /* Zöld szín */
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Sötétebb zöld */
+    border-color: #1e7e34;
 }
