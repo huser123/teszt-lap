@@ -3,64 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Teszt</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            display: flex;
-            height: 100vh;
-        }
-        nav {
-            width: 200px;
-            background-color: #333;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            flex: 1;
-            background: #f4f4f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #555;
-            max-width: 600px;
-            text-align: center;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Blog Főoldal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Főoldal</a>
-        <a href="masodik.html">Második oldal</a>
-        <a href="harmadik.html">Harmadik oldal</a>
-        <a href="negyedik.html">Negyedik oldal</a>
-    </nav>
+    <header>
+        <h1>Üdvözöllek a Blogomban!</h1>
+        <p>Kövess végig egy átlagos ember kicsit vicces, kicsit önironikus mindennapjain!</p>
+    </header>
+
     <main>
-        <h1>GitHub Pages Teszt</h1>
-        <p>Ez az oldal a GitHub Pages és a GitHub használatának tesztelésére készült. Itt megtalálod a push, pull, commit parancsok működésének bemutatását és a Pages publikálásának folyamatát.</p>
+        <section class="posts">
+            <article>
+                <h2><a href="hetfo.html">Hétfő: A hét kezdete</a></h2>
+                <p>A hétfő reggelek különös érzéssel töltenek el. Klikkelj, hogy megtudd, miért!</p>
+            </article>
+            <article>
+                <h2><a href="kedd.html">Kedd: A produktivitás napja</a></h2>
+                <p>Valóban lehet produktívnak lenni egy kedden? Klikk, hogy kiderüljön!</p>
+            </article>
+            <article>
+                <h2><a href="szerda.html">Szerda: A hét közepe</a></h2>
+                <p>Hogyan lendülök át a hét felén? Olvass tovább!</p>
+            </article>
+            <article>
+                <h2><a href="csutortok.html">Csütörtök: Az elvárások napja</a></h2>
+                <p>Mi történik, amikor már közeleg a hétvége? Klikk ide!</p>
+            </article>
+            <article>
+                <h2><a href="pentek.html">Péntek: A hétvége előszobája</a></h2>
+                <p>Egy átlagos pénteki nap... vagy mégsem? Olvasd el!</p>
+            </article>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024, Vicces Napló Blog. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
